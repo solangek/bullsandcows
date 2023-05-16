@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# A React App based on states and props only
+
+School solution of the Hadassah College React course, 2023.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
