@@ -2,11 +2,14 @@ const generateAnswer = () => {
     const answer = [];
     // generate 4 different random digits
 
-    while (answer.length < 4) {
-        const randomDigit = Math.floor(Math.random() * 10);
-        if (!answer.includes(randomDigit)) {
-            answer.push(randomDigit);
-        }
+    const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    for (let i = 0; i < 4; i++) {
+        // pick a digit randomly from digits
+        const randomIndex = Math.floor(Math.random() * digits.length);
+        answer.push(digits[randomIndex]);
+        // remove the digit from digits
+        digits.splice(randomIndex, 1);
     }
 
     console.log("guess:" + answer)
